@@ -62,7 +62,7 @@ class AppOnboarding extends StatelessWidget {
       ),
       floatingActionButton: IconButton(
           onPressed: () {
-            Get.toNamed('/home_screen');
+            Get.offAllNamed('/landing_screen');
           },
           icon: const Icon(Icons.skip_next, size: 40)),
     );

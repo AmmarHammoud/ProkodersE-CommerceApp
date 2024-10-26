@@ -46,7 +46,7 @@ class SignUpController extends GetxController {
           'call api with name and email: ----------------- ${userTextControllers.value.nameController.text}, ${userTextControllers.value.emailController.text}');
 
       //navigate to home screen
-      Get.offAllNamed('/landing_screen');
+      Get.offAllNamed('/onboarding');
 
       //update state to success
       state = SignUpScreenSuccessState().obs;

@@ -38,7 +38,7 @@ class SignInController extends GetxController {
       //save user
 
       //navigate to home screen
-      Get.offAllNamed('/landing_screen');
+      Get.offAllNamed('/onboarding');
 
       //show a toast
       showToast(
