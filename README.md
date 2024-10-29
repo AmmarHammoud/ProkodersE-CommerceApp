@@ -44,4 +44,18 @@ After logging in, users should be directed to the home screen, which will have b
 Requirements:  
     * Implement smooth navigation between different sections when the user taps teh items in the bottom navigation bar.  
     * Ensure the bottom navigation bar is visible across all sections within the home screen.  
-<img src="readme_photos/task_1/bottom_nav_bar.gif" width="300" align="center"/>
+<img src="readme_photos/task_1/bottom_nav_bar.gif" width="300" align="center"/>  
+  
+#### Task #3  
+##### :date: start date: 29/10/2024 09:00 AM - Deadline: 30/10/2024 10:00 AM  
+Objective:  
+Caching screen using GetStorage  
+In this task, you will implement caching for the login, sign-up, and onboarding screen using GetStorage. This will allow the app to remember the user's progress and settings, reducing the need to display these screens every time the app is opened.  
+##### Requirements:  
+* Onboarding screen caching: Use GetStorage to store a flag indicateing whether the user has completed the onboarding process. When the app launches, check this flag; If the user has completed the onboarding, navigate him directly to the login screen; If not, show the onboarding screens and set the flag to true upon completion.  
+* Login screen caching: When the user successfully logs in, store a flag in GetStorage to indicate that he has logged before. When the app is reopened, check this flag: if the user is already logged in, skip the login scree and navigate directly to the home screen; Otherwise, show the login screen.
+* Sign-up screen caching.  
+##### Steps:  
+* Set up GetStorage in the app to handle local data storage.  
+* Implement logic on each screen to check GetStorage for cached values and decide teh screen flow accordignly.  
+* Test the app to ensure the caching bahaves correctly, remembering the user's progress through onboarding, login, and sign-up.
