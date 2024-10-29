@@ -1,0 +1,11 @@
+flutter_native_splash:
+  background_image: "assets/images/background.png"
+  image: "assets/logos/logo.png"
+
+  #do not forget to specify the dark mode splash screen
+  background_image_dark: "assets/images/background.png"
+  image_dark: "assets/logos/logo.png"
+
+  android_12:
+    color: "#d4e4ed"
+    image: "assets/logos/logo.png"

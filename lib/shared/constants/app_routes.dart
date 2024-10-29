@@ -8,21 +8,21 @@ import 'package:prokoders_e_commerce/screens/sign_in_screen/sign_in_screen.dart'
 import 'package:prokoders_e_commerce/screens/sign_up_screen/sign_up_screen.dart';
 
 class AppRoutes {
-  static const String _onboarding = '/onboarding';
-  static const String _landingScreen = '/landing_screen';
-  static const String _signInScreen = '/sign_in_screen';
-  static const String _signUpScreen = '/sign_up_screen';
-  static const String _homeScreen = '/home_screen';
-  static const String _profileScreen = '/profile_screen';
-  static const String _settingsScreen = '/settings_screen';
+  static const String onboarding = '/onboarding';
+  static const String landingScreen = '/landing_screen';
+  static const String signInScreen = '/sign_in_screen';
+  static const String signUpScreen = '/sign_up_screen';
+  static const String homeScreen = '/home_screen';
+  static const String profileScreen = '/profile_screen';
+  static const String settingsScreen = '/settings_screen';
 
   static final routes = [
-    GetPage(name: _onboarding, page: () => const AppOnboarding()),
-    GetPage(name: _landingScreen, page: () => LandingScreen()),
-    GetPage(name: _signInScreen, page: () => SignInScreen()),
-    GetPage(name: _signUpScreen, page: () => SignUpScreen()),
-    GetPage(name: _homeScreen, page: () => const HomeScreen()),
-    GetPage(name: _profileScreen, page: () => const ProfileScreen()),
-    GetPage(name: _settingsScreen, page: () => const SettingsScreen()),
+    GetPage(name: onboarding, page: () => AppOnboarding()),
+    GetPage(name: landingScreen, page: () => LandingScreen()),
+    GetPage(name: signInScreen, page: () => SignInScreen()),
+    GetPage(name: signUpScreen, page: () => SignUpScreen()),
+    GetPage(name: homeScreen, page: () => const HomeScreen()),
+    GetPage(name: profileScreen, page: () => const ProfileScreen()),
+    GetPage(name: settingsScreen, page: () => const SettingsScreen()),
   ];
 }

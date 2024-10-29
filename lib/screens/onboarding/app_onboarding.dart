@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:onboarding/onboarding.dart';
+import 'package:prokoders_e_commerce/shared/components/get_storage_helper.dart';
+import 'package:prokoders_e_commerce/shared/constants/app_routes.dart';
 
 import 'footer/onboarding_footer.dart';
 import 'footer/onboarding_footer_circle.dart';
 import 'onboarding_item.dart';
 
 class AppOnboarding extends StatelessWidget {
-  const AppOnboarding({super.key});
+  AppOnboarding({super.key}) {
+    GetStorageHelper.saveOnboardingStatus(onboardingStatus: true);
+  }
 
   final String photoPrefix = 'assets/onboarding_photos';
 
@@ -62,7 +66,7 @@ class AppOnboarding extends StatelessWidget {
       ),
       floatingActionButton: IconButton(
           onPressed: () {
-            Get.offAllNamed('/landing_screen');
+            Get.offAllNamed(AppRoutes.signInScreen);
           },
           icon: const Icon(Icons.skip_next, size: 40)),
     );

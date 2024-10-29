@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:prokoders_e_commerce/screens/sign_up_screen/controllers/sign_up_controller/sign_up_screen_states.dart';
+import 'package:prokoders_e_commerce/shared/constants/app_routes.dart';
 import 'package:prokoders_e_commerce/shared/constants/user_text_controllers.dart';
 import 'package:prokoders_e_commerce/shared/constants/user_text_validators.dart';
 
@@ -46,7 +47,13 @@ class SignUpController extends GetxController {
           'call api with name and email: ----------------- ${userTextControllers.value.nameController.text}, ${userTextControllers.value.emailController.text}');
 
       //navigate to home screen
-      Get.offAllNamed('/onboarding');
+      Get.offAllNamed(AppRoutes.signInScreen);
+
+      //show toast
+      showToast(
+          context: context,
+          text: 'please sign in with your new account',
+          color: Colors.green);
 
       //update state to success
       state = SignUpScreenSuccessState().obs;

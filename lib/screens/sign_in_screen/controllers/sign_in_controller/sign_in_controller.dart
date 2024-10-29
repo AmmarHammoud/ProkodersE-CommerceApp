@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:prokoders_e_commerce/screens/sign_in_screen/controllers/sign_in_controller/sign_in_screen_states.dart';
+import 'package:prokoders_e_commerce/shared/components/get_storage_helper.dart';
+import 'package:prokoders_e_commerce/shared/constants/app_routes.dart';
 import 'package:prokoders_e_commerce/shared/constants/user_text_controllers.dart';
 import 'package:prokoders_e_commerce/shared/constants/user_text_validators.dart';
 
@@ -36,9 +38,10 @@ class SignInController extends GetxController {
       //fill up the model
 
       //save user
+      GetStorageHelper.saveUserToken(token: 'token');
 
       //navigate to home screen
-      Get.offAllNamed('/onboarding');
+      Get.offAllNamed(AppRoutes.landingScreen);
 
       //show a toast
       showToast(
