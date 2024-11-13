@@ -4,7 +4,7 @@ import 'package:prokoders_e_commerce/screens/settings_screen/settings_screen.dar
 import '../../screens/home_screen/home_screen.dart';
 
 List<Widget> bottomNavBarPages = [
-  const HomeScreen(),
+  HomeScreen(),
   const ProfileScreen(),
   const SettingsScreen(),
 ];
